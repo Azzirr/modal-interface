@@ -1,0 +1,118 @@
+@import '../styles/variables';
+
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins-Medium.ttf');
+}
+
+.app-background {
+  background-color: $base-background-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.modal{
+  width: $modal-width;
+  height: $modal-height;
+  padding: $modal-padding;
+  border-radius: $modal-rounding;
+  background-color: $modal-background;
+  font-family: Poppins;
+
+  ._content{
+    height: $modal-content-height;
+
+    ._header{
+      width: $modal-header-width;
+      height: $modal-header-height;
+      font-size: $modal-header-font-size;
+      font-weight: $modal-header-font-weight;
+      line-height: $modal-header-line-height;
+      text-align: left;
+      color: $modal-header-color;
+    }
+    
+    ._subheader{
+      width: $modal-subheader-width;
+      height: $modal-subheader-height;
+      margin-top: $modal-gaps-between-lines;
+      margin-left: 8px;
+      font-size: $modal-subheader-font-size;
+      font-weight: $modal-subheader-font-weight;
+      line-height: $modal-subheader-line-height;
+      letter-spacing: $modal-subheader-letter-spacing;
+      text-align: left;
+      color: $modal-subheader-color;
+    }
+
+    ._inputs{
+      padding: $modal-inputs-padding;
+      border-radius: $modal-inputs-rounding;
+      background: $modal-background;
+      border: $modal-inputs-border;
+      border-color: $modal-inputs-border;
+    }
+
+    ._inputs-box{
+      width: 612px;
+    }
+
+    ._area-code{
+      @extend ._inputs;
+      width: $area-code-width;
+      margin-right: $area-code-gap;
+      border-radius: $area-code-rounding;
+    }
+
+    ._number{
+      @extend ._inputs;
+      width: $number-width;
+    }
+
+    ._buttons{
+      display: flex;
+      justify-content: flex-end;
+      height: 32px;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: 0px;
+      text-align: center;
+      margin-top: $modal-gaps-between-lines;
+    }
+
+    ._cancel-button{
+      @extend ._buttons;
+      float: left;
+      width: 116px;
+      height: 32px;
+      padding: 7.5px 32px 7.5px 33px;
+      border-radius: 6px;
+      border: 1px solid #5870E0;
+      background-color: #FFFFFF;
+      margin-right: 16px;
+    }
+    
+
+    ._save-button{
+      @extend ._buttons;
+      clear: both;
+      width: 116px;
+      height: 32px;
+      padding: 7.5px 40px 7.5px 41px;
+      border-radius: 6px;
+      background: #5870E0;
+      border: 1px solid #5870E0;
+      color: #FFFFFF;
+    }
+  }
+}
+::placeholder{
+  font-family: Poppins;
+}

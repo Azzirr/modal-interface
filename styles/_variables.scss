@@ -1,0 +1,48 @@
+// Base modal CSS
+$base-background-color: #282c34;
+$modal-width: 564px;
+$modal-height: 202px;
+$modal-padding: 24px;
+$modal-rounding: 12px;
+$modal-background: #FFFFFF;
+$modal-gaps-between-lines: 18px;
+// Content CSS
+$modal-content-width: 516px;
+$modal-content-height: 98px;
+$modal-content-gap: 34px;
+// Header CSS
+$modal-header-width: 336px;
+$modal-header-height: 24px;
+$modal-header-font-size: 18px;
+$modal-header-font-weight: 600;
+$modal-header-line-height: 24px;
+$modal-header-color: #28293D;
+// Subheader CSS
+$modal-subheader-width: 172px;
+$modal-subheader-height: 16px;
+$modal-subheader-font-size: 12px;
+$modal-subheader-font-weight: 500;
+$modal-subheader-line-height: 16px;
+$modal-subheader-letter-spacing: 0.2px;
+$modal-subheader-color: #555770;
+// Inputs CSS
+$modal-inputs-height: 40px;
+$modal-inputs-padding: 8px 12px 8px 12px;
+$modal-inputs-rounding: 6px;
+$modal-inputs-background: linear-gradient(0deg, #C7C9D9, #C7C9D9),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+$modal-inputs-border: 1px solid #C7C9D9;
+    $area-code-width: 106px;
+    $area-code-gap: 10px;
+    $area-code-rounding: 6px;
+    $number-width: 395px;
+// Button CSS
+$modal-button-width: 116px;
+$modal-button-height: 32px;
+$modal-button-font-weight: 500;
+$modal-button-border: 1px solid transparent;
+$modal-button-font-size: 14px;
+$modal-button-line-height: 17px;
+$modal-button-border-radius: 6px;
+$modal-button-color: #28293D;
+$modal-button-border-color: #5870E0;
