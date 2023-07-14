@@ -13,7 +13,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .modal{
@@ -58,10 +57,12 @@
       border-color: $modal-inputs-border;
     }
 
-    ._inputs-box{
-      width: 612px;
+    ._search-input{
+      float: left;
+      width: 106px;
+      margin-right: 20px;
     }
-
+    
     ._area-code{
       @extend ._inputs;
       width: $area-code-width;
@@ -72,6 +73,8 @@
     ._number{
       @extend ._inputs;
       width: $number-width;
+      margin-left: 10px;
+      height: 32px;
     }
 
     ._buttons{
@@ -99,7 +102,6 @@
       margin-right: 16px;
     }
     
-
     ._save-button{
       @extend ._buttons;
       clear: both;
@@ -111,8 +113,36 @@
       border: 1px solid #5870E0;
       color: #FFFFFF;
     }
+
+    ._number-code{
+      display: flex;
+    }
   }
 }
 ::placeholder{
   font-family: Poppins;
+}
+.dropdown-option{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+.select-menu{
+  width: 300px;
+  margin: 150px auto;
+}
+.select-menu .select-btn{
+  display: flex;
+  height: 55px;
+  background: #FFFF;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.dropdown-font{
+  font-size: 14px;
+  color: #555770;
+  padding: 8px 12px 8px 12px;
+  line-height: 20px;
 }

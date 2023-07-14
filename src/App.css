@@ -10,7 +10,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .modal {
@@ -52,8 +51,10 @@
   border: 1px solid #C7C9D9;
   border-color: 1px solid #C7C9D9;
 }
-.modal ._content ._inputs-box {
-  width: 612px;
+.modal ._content ._search-input {
+  float: left;
+  width: 106px;
+  margin-right: 20px;
 }
 .modal ._content ._area-code {
   width: 106px;
@@ -61,7 +62,9 @@
   border-radius: 6px;
 }
 .modal ._content ._number {
-  width: 395px;
+  width: 400px;
+  margin-left: 10px;
+  height: 32px;
 }
 .modal ._content ._buttons, .modal ._content ._save-button, .modal ._content ._cancel-button {
   display: flex;
@@ -95,6 +98,9 @@
   border: 1px solid #5870E0;
   color: #FFFFFF;
 }
+.modal ._content ._number-code {
+  display: flex;
+}
 
 ::-moz-placeholder {
   font-family: Poppins;
@@ -102,4 +108,32 @@
 
 ::placeholder {
   font-family: Poppins;
+}
+
+.dropdown-option {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.select-menu {
+  width: 300px;
+  margin: 150px auto;
+}
+
+.select-menu .select-btn {
+  display: flex;
+  height: 55px;
+  background: white;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.dropdown-font {
+  font-size: 14px;
+  color: #555770;
+  padding: 8px 12px 8px 12px;
+  line-height: 20px;
 }/*# sourceMappingURL=App.css.map */

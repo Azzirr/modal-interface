@@ -1,5 +1,6 @@
-export default function Modal(){
+import SearchDropdown from '../SearchDropdown/SearchDropdown';
 
+export default function Modal(){
     return(
         <div className="modal">
             <div className="_content">
@@ -9,8 +10,10 @@ export default function Modal(){
                 <div className="_subheader">
                     <span>Provide new phone number</span>
                 </div>
+                <div className='_search-input'>
+                    <SearchDropdown></SearchDropdown>
+                </div>
                 <div className="_inputs-box">
-                    <input className="_area-code" type="number"></input>
                     <input className="_number" type="number" placeholder="000-000-000"></input>
                 </div>
                 <div className="_buttons">
