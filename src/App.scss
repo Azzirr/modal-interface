@@ -75,36 +75,35 @@
     ._buttons {
       display: flex;
       justify-content: flex-end;
-      height: 32px;
+      height: $modal-button-height;
       font-family: Poppins;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 17px;
-      letter-spacing: 0px;
+      font-size: $modal-button-font-size;
+      font-weight: $modal-button-font-weight;
+      line-height: $modal-button-line-height;
       text-align: center;
       margin-top: $modal-gaps-between-lines;
 
       &._cancel-button {
         @extend ._buttons;
         float: left;
-        width: 116px;
-        height: 32px;
-        padding: 7.5px 32px 7.5px 33px;
-        border-radius: 6px;
-        border: 1px solid #5870E0;
-        background-color: #FFFFFF;
+        width: $modal-button-width;
+        height: $modal-button-height;
+        padding: $modal-button-cancel-padding;
+        border-radius: $modal-button-border-radius;
+        border: $modal-button-border;
+        background-color: $modal-button-cancel-background-color;
         margin-right: 16px;
       }
 
       &._save-button {
         @extend ._buttons;
         clear: both;
-        width: 116px;
-        height: 32px;
-        padding: 7.5px 40px 7.5px 41px;
-        border-radius: 6px;
-        background: #5870E0;
-        border: 1px solid #5870E0;
+        width: $modal-button-width;
+        height: $modal-button-height;
+        padding: $modal-button-save-padding;
+        border-radius: $modal-button-border-radius;
+        border: $modal-button-border;
+        background: $modal-button-save-background-color;
         color: #FFFFFF;
       }
     }
